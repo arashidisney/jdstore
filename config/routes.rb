@@ -22,4 +22,8 @@ end
  resources :cart_items
  root 'products#index'
  resources :orders
+
+ namespace :account do
+ resources :orders
+ end
 end
